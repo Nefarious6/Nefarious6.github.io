@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 动画 */
+      @keyframes test {
+        0% {
+          top: -200px;
+          left: 0px;
+        }
+        100% {
+          top: 100px;
+          left: 0;
+        }
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      #root {
+        width: 1000px;
+        margin: 50px auto;
+        background-color: #ffffff;
+        padding: 20px;
+      }
+      .imgDiv {
+        margin: 10px auto;
+        width: 500px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .left {
+        float: left;
+        border-radius: 10px;
+        opacity: 0.7;
+        cursor: pointer;
+        position: absolute;
+      }
+      .right {
+        float: right;
+        border-radius: 10px;
+        opacity: 0.7;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+      }
+      .time {
+        position: fixed;
+        top: -200px;
+        left: 0;
+        background-color: aqua;
+        width: 220px;
+        height: 200px;
+      }
+      .sanjiao {
+        border: 25px solid;
+        border-bottom-color: #f5f5f5;
+        border-left-color: #f5f5f5;
+        border-right-color: #f5f5f5;
+        border-top-color: aqua;
+        width: 0;
+        height: 0;
+        margin-top: 179px;
+      }
+      .donghua {
+        animation-name: test;
+        animation-duration: 2000ms;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-play-state: running;
+        animation-fill-mode: forwards;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+      }
+      p {
+        text-indent: 2em;
+        background-color: #ffffff;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="time" :class="{'donghua':isWhat}">
+        {{i_year}}--{{i_month}}--{{i_day}}--{{i_hours}}--{{i_minute}}--{{i_seconds}}
+        <div @click="changeStyle" class="sanjiao"></div>
+      </div>
+
+      <h1>我的“家乡”---二次元世界</h1>
+      <div class="imgDiv">
+        <button @click="left" class="left">
+          <img class="test" src="./定位/img/left.png" alt="" width="25px" />
+        </button>
+        <img :src="imgSrc[index]" alt="" width="500px" />
+        <button @click="right" class="right">
+          <img src="./定位/img/right.png" alt="" width="25px" />
+        </button>
+      </div>
+      <div class="content">
+        <p>
+          二次元，原指“二维世界”，包含长度和宽度的二维空间。后来成为了ACGN亚文化圈专门用语，特意用“二次元”来指代。
+          由二维图像的动画、漫画、游戏等作品构成，简单来讲就是在纸面或屏幕等平面上所呈现的动画、游戏等平面视觉作品，里面的角色都是图像形式，区别于真人饰演的影视剧，因此被称为“纸片人”。通过这些载体创造的虚拟世界被动漫爱好者称为“二次元世界”，简称“二次元”。在某种意义上讲，二次元还意指喜爱它的人就像生活在一个平面世界中一样。
+          “二次元”是一个平面媒体所表达的“异次元”，因其二维空间本质被称为“二次元”。“二次元”词义逐渐脱离原本的空间属性，并派生出与主流文化相对独立的次文化体系，也就是“二次元”文化。
+          该词广泛在ACGN文化圈中被用作对“架空世界”或者说梦想世界的一种称呼，具有“架空”、“幻想”之意，用各种憧憬的体现虐袭观赏者的视觉体验，但ACGN并非等同于二次元。“二次元”本质还是人类幻想出来的唯美世界。在海外一些国家已形成较完整的产业链，涉及视频播放、演艺经济、粉丝经济、旅游线路和衍生产品开发等
+          。
+        </p>
+      </div>
+    </div>
+
+    <script>
+      new Vue({
+        el: "#root",
+        data: {
+          imgSrc: [
+            "./定位//img/01.jpg",
+            "./定位//img/02.jpg",
+            "./定位//img/03.jpg",
+          ],
+          index: 0,
+          i_year: "",
+          i_month: "",
+          i_day: "",
+          i_hours: "",
+          i_minute: "",
+          i_seconds: "",
+          isWhat: false,
+        },
+        methods: {
+          left() {
+            if (this.index === 0) this.index = this.imgSrc.length;
+            this.index--;
+          },
+          right() {
+            if (this.index === this.imgSrc.length - 1) this.index = -1;
+            this.index++;
+          },
+          getDate() {
+            let that = this;
+            setInterval(function () {
+              let time = new Date();
+              that.i_year = time.getFullYear();
+              that.i_month = time.getMonth() + 1;
+              that.i_day = time.getDate();
+              that.i_hours = time.getHours();
+              that.i_minute = time.getMinutes();
+              that.i_seconds = time.getSeconds();
+            }, 100);
+          },
+          changeStyle() {
+            this.isWhat = !this.isWhat;
+          },
+        },
+        watch: {
+          // isWhat() {
+          //   setTimeout(() => {
+          //     this.isWhat = false;
+          //   }, 5000);
+          // },
+        },
+        created() {
+          this.getDate();
+        },
+      });
+    </script>
+  </body>
+</html>
