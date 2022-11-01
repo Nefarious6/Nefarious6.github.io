@@ -1,0 +1,11 @@
+http://example.com/2021/02/18/hello-world/
+http://example.com/categories/index.html
+http://example.com/tags/index.html
+http://example.com/link/index.html
+http://example.com/Photo/index.html
+http://example.com/messageboard/index.html
+http://example.com/about/index.html
+http://example.com/timeline/index.html
+http://example.com/
+http://example.com/tags/JAVA/
+http://example.com/categories/CSS/
