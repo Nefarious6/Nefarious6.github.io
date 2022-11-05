@@ -6,7 +6,7 @@
   <link href="http://www.lxcxm.icu/atom.xml" rel="self"/>
   
   <link href="http://www.lxcxm.icu/"/>
-  <updated>2022-11-02T08:10:51.096Z</updated>
+  <updated>2022-11-05T07:32:44.326Z</updated>
   <id>http://www.lxcxm.icu/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css动画-animation</title>
+    <link href="http://www.lxcxm.icu/2022/11/02/CSS%E5%8A%A8%E7%94%BB-animation/"/>
+    <id>http://www.lxcxm.icu/2022/11/02/CSS%E5%8A%A8%E7%94%BB-animation/</id>
+    <published>2022-11-02T04:12:12.000Z</published>
+    <updated>2022-11-05T07:32:44.326Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="🐶css动画-animation"><a href="#🐶css动画-animation" class="headerlink" title="🐶css动画-animation"></a>🐶css动画-animation</h1><h3 id="animation-name-绑定动画"><a href="#animation-name-绑定动画" class="headerlink" title="animation-name: 绑定动画"></a>animation-name: 绑定动画</h3><h3 id="animation-duration-动画执行一次需要的时间"><a href="#animation-duration-动画执行一次需要的时间" class="headerlink" title="animation-duration: 动画执行一次需要的时间"></a>animation-duration: 动画执行一次需要的时间</h3><h3 id="animation-timing-function-控制动画的速度"><a href="#animation-timing-function-控制动画的速度" class="headerlink" title="animation-timing-function: 控制动画的速度"></a>animation-timing-function: 控制动画的速度</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">linear</span>: 匀速</span><br><span class="line"><span class="attr">ease</span>: 先低速开始，然后加速，结束前前减速（默认）</span><br><span class="line">ease-<span class="attr">in</span>: 低速开始</span><br><span class="line">ease-<span class="attr">out</span>: 低速结束</span><br><span class="line">ease-<span class="keyword">in</span>-<span class="attr">out</span>: 低速开始和低速结束</span><br><span class="line">cubic-<span class="title function_">bezier</span>(n,n,n,n): 在cubic-bezier函数中自己的值</span><br></pre></td></tr></table></figure><h3 id="animation-delay-规定在动画开始之前的延迟"><a href="#animation-delay-规定在动画开始之前的延迟" class="headerlink" title="animation-delay:规定在动画开始之前的延迟"></a>animation-delay:规定在动画开始之前的延迟</h3><h3 id="animation-iteration-count-动画执行的次数，默认为一次"><a href="#animation-iteration-count-动画执行的次数，默认为一次" class="headerlink" title="animation-iteration-count: 动画执行的次数，默认为一次"></a>animation-iteration-count: 动画执行的次数，默认为一次</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nfinite 无限循环</span><br></pre></td></tr></table></figure><h3 id="animation-direction-规定动画是否轮流反向播放"><a href="#animation-direction-规定动画是否轮流反向播放" class="headerlink" title="animation-direction:  规定动画是否轮流反向播放"></a>animation-direction:  规定动画是否轮流反向播放</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alternate 动画运行奇数次正常播放，偶数次方向播放</span><br></pre></td></tr></table></figure><h3 id="animation-direction：规定动画正在运行还是暂停"><a href="#animation-direction：规定动画正在运行还是暂停" class="headerlink" title="animation-direction：规定动画正在运行还是暂停"></a>animation-direction：规定动画正在运行还是暂停</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">paused 规定动画已暂停</span><br><span class="line">running 规定动画正在播放</span><br></pre></td></tr></table></figure><h3 id="animation-fill-mode-规定动画在播放之前或之后，其动画效果是否可见。其属性值是由逗号分隔的一个或多个填充模式关键词。"><a href="#animation-fill-mode-规定动画在播放之前或之后，其动画效果是否可见。其属性值是由逗号分隔的一个或多个填充模式关键词。" class="headerlink" title="animation-fill-mode 规定动画在播放之前或之后，其动画效果是否可见。其属性值是由逗号分隔的一个或多个填充模式关键词。"></a>animation-fill-mode 规定动画在播放之前或之后，其动画效果是否可见。其属性值是由逗号分隔的一个或多个填充模式关键词。</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">none 不改变默认行为</span><br><span class="line">forwards 当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）</span><br><span class="line">backwards 在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）</span><br><span class="line">both 向前和向后填充模式都被应用</span><br></pre></td></tr></table></figure><h3 id="动画分为-初始状态-等待期-动画执行期-完成期-四个阶段："><a href="#动画分为-初始状态-等待期-动画执行期-完成期-四个阶段：" class="headerlink" title="动画分为 初始状态 等待期 动画执行期 完成期 四个阶段："></a>动画分为 <strong>初始状态 等待期 动画执行期 完成期</strong> 四个阶段：</h3><p>初始状态，就是没有触发动画效果时，你元素原本应该有的状态<br>等待期，就是 animation-delay 设置的延迟期间<br>动画执行期，指的是 delay 结束瞬间开始执行动画，一直持续到最后一帧<br>完成状态，执行完最后一帧时，元素处于的状态</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">none 表示 等待期和完成期，元素样式都为初始状态样式，不受动画定义（@keyframes）的影响</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">both 表示 等待期样式为第一帧样式，完成期保持最后一帧样式</span><br><span class="line"></span><br><span class="line">backwards 表示等待期为第一帧样式，完成期跳转为初始样式</span><br><span class="line"></span><br><span class="line">forwards 表示等待期保持初始样式，完成期间保持最后一帧样式</span><br></pre></td></tr></table></figure><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;🐶css动画-animation&quot;&gt;&lt;a href=&quot;#🐶css动画-animation&quot; class=&quot;headerlink&quot; title=&quot;🐶css动画-animation&quot;&gt;&lt;/a&gt;🐶css动画-animation&lt;/h1&gt;&lt;h3 id=&quot;anima</summary>
+      
+    
+    
+    
+    <category term="前端" scheme="http://www.lxcxm.icu/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="CSS" scheme="http://www.lxcxm.icu/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown入门</title>

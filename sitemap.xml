@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.lxcxm.icu/2022/11/02/CSS%E5%8A%A8%E7%94%BB-animation/</loc>
+    
+    <lastmod>2022-11-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.lxcxm.icu/about/index.html</loc>
     
     <lastmod>2022-11-02</lastmod>
@@ -94,7 +103,7 @@
 
   <url>
     <loc>http://www.lxcxm.icu/</loc>
-    <lastmod>2022-11-03</lastmod>
+    <lastmod>2022-11-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -102,21 +111,21 @@
   
   <url>
     <loc>http://www.lxcxm.icu/tags/CSS/</loc>
-    <lastmod>2022-11-03</lastmod>
+    <lastmod>2022-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.lxcxm.icu/tags/JavaScript/</loc>
-    <lastmod>2022-11-03</lastmod>
+    <lastmod>2022-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.lxcxm.icu/tags/Markdown/</loc>
-    <lastmod>2022-11-03</lastmod>
+    <lastmod>2022-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -125,14 +134,14 @@
   
   <url>
     <loc>http://www.lxcxm.icu/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2022-11-03</lastmod>
+    <lastmod>2022-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.lxcxm.icu/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2022-11-03</lastmod>
+    <lastmod>2022-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
